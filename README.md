@@ -18,7 +18,7 @@ This is system trading simulator V.0.0.0 using coinone API V2
 
 
 ### 활용 예제
-
+- src 디렉토리 내의 png 파일 참조
 
 ### 주의 사항
 - src 디렉토리 내의 codingTest와 codingTest_stack은 각각 프로그램의 주된 역할을 하는 프로젝트와 시세 정보를 불러오기만 하는 별개의 프로젝트로, 서버 구동시 포트 번호를 다르게 지정해줘야함 (e.g. localhost:8000, localhost:7000)
