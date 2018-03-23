@@ -172,7 +172,9 @@ def logs(request, currency_name):
             base_price = currency_price_data
 
             tmp_coin = CoinList.objects.get(name=currency_name)
-            tmp = SimLogs(currency=tmp_coin, krw_balance=krw_balance, currency_price=currency_price_data, currency_balance=currency_balance, currency_price_changed=currency_price_changed, total_balance=total_balance, sell_buy=sell_buy)
+            tmp = SimLogs(currency=tmp_coin, krw_balance=krw_balance, currency_price=currency_price_data, 
+                          currency_balance=currency_balance, currency_price_changed=currency_price_changed, 
+                          total_balance=total_balance, sell_buy=sell_buy)
             tmp.save()
             sim_data.append(tmp)
 
