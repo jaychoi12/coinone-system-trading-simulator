@@ -23,4 +23,4 @@ This is system trading simulator V.0.0.0 using coinone API V2
 ### 주의 사항
 - src 디렉토리 내의 codingTest와 codingTest_stack은 각각 프로그램의 주된 역할을 하는 프로젝트와 시세 정보를 불러오기만 하는 별개의 프로젝트로, 서버 구동시 포트 번호를 다르게 지정해줘야함 (e.g. localhost:8000, localhost:7000)
 - 단, codingTest와 codingTest_stack의 db는 같은 파일을 사용하도록 각 프로젝트 폴더 내의 settings.py 파일에서 path 설정을 해줘야함
-- Coinone에서 제공하는 access token과 secret key는 json 형태로 secrets.json 파일에 입력하여 codingTest 프로젝트의 manage.py 파일과 같은 위치에 저장시켜줘야함
+- Coinone에서 제공하는 access token과 secret key는 json 형태로 secrets.json 파일에 입력하여 codingTest 프로젝트의 manage.py 파일과 같은 위치에 저장시켜줘야함 (ACCESS_KEY, V2_SECRET_KEY)
