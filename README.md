@@ -15,7 +15,7 @@ This is system trading simulator V.0.0.0 using coinone API V2
 - django 1.10.7
 
 ### 개념도
-
+![coinone-system-trading-simulator 1](https://user-images.githubusercontent.com/12479160/37813954-eb2dd9b8-2eaa-11e8-813c-e120d0a0ce59.png)
 
 ### 활용 예제
 - src 디렉토리 내의 png 파일 참조
