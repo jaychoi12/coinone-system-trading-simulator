@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+ <h2>Coin List</h2>
+
+{% if coin_list %}
+    <ul>
+    {% for currency in coin_list %}
+        <li><a href="/simulator/{{ currency }}/">{{ currency }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No coin db</p>
+{% endif %}
+
+<h2>Click a currency name!</h2>
+{% endblock %}

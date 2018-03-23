@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Account Settings</h1>
+  <form method="get">
+    <p>currency ex) krw, ltc, ...</p>
+    <input type="text" name="currency">
+    <p>balance ex) 100, 532441, ...</p>
+    <input type="text" name="avail">
+    <button type="submit">save</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Currency Price</h2>
+  <form method="get">
+    <input type="text" name="currency">
+    <button type="submit">In Coinone</button>
+  </form>
+  {% if cur_info %}
+    <p><strong>{{ cur_info.currency }}</strong> : <strong>{{ cur_info.last }}</strong>(krw)</p>
+  {% endif %}
+{% endblock %}

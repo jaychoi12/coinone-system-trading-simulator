@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+ <h2>Simulation Logs</h2>
+
+{% if sim_data %}
+    <table style="width:100%">
+          <tr>
+            <th>Currency</th>
+            <th>KRW Balance</th>
+            <th>Currency Balance</th>
+            <th>Currency Price</th>
+            <th>Currency Price Change</th>
+            <th>Total Value (KRW + Currency)</th>
+            <th>Sell Buy</th>
+          </tr>
+          {% for log in sim_data %}
+            <tr>
+                <td>{{ log.currency.name }}</td>
+                <td>{{ log.krw_balance }}</td>
+                <td>{{ log.currency_balance }}</td>
+                <td>{{ log.currency_price }}</td>
+                <td>{{ log.currency_price_changed }}</td>
+                <td>{{ log.total_balance }}</td>
+                <td>{{ log.sell_buy }}</td>
+            </tr>
+          {% endfor %}
+    </table>
+{% else %}
+    <p>No data</p>
+{% endif %}
+
+    <h3>Total Value Change : {{ total_value_change }}</h3>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+ <h2>Your Balance</h2>
+
+{% if coin_list %}
+    <ul>
+    {% for currency in coin_list %}
+        <li>{{ currency.name }} : {{ currency.price }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No coin db</p>
+{% endif %}
+    <h3><a href="/settings/">account settings</a> </h3>
+    <h2><a href="/simulator/">Go to the Simulator!!</a></h2>
+
+{% endblock %}

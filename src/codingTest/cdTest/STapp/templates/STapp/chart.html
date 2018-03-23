@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+  <div id="chart-1">{{ output|safe }}</div>
+
+  <a href="/simulator/{{ currency_name }}/logs">Run and View logs</a>
+
+{% endblock %}
